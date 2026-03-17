@@ -3,10 +3,9 @@ body {
     font-family: Arial;
 }
 #rooms {
-    display: flex;
-    flex-wrap: wrap;
-    width: 900px;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 }
 .room {
     background-color: lightblue;
