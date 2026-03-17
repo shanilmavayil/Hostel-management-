@@ -48,7 +48,7 @@ function allocate() {
     showRooms();
 }
    
-}
+
 
 function vacate(room, bed) {
     rooms[room]["bed"+bed] = "";
