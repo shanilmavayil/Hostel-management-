@@ -2,7 +2,12 @@ body {
     text-align: center;
     font-family: Arial;
 }
-
+#rooms {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: auto;
+}
 .room {
     background-color: lightblue;
     border: 1px solid black;
