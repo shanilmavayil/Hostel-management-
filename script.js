@@ -33,6 +33,12 @@ function allocate() {
     var room = document.getElementById("room").value;
     var bed = document.getElementById("bed").value;
 
+  
+    if (room < 1 || room > 10 || bed < 1 || bed > 2) {
+        alert("Enter valid Room (1-10) and Bed (1 or 2)");
+        return;
+    }
+
     if (rooms[room]["bed"+bed] == "") {
         rooms[room]["bed"+bed] = name;
     } else {
@@ -40,6 +46,8 @@ function allocate() {
     }
 
     showRooms();
+}
+   
 }
 
 function vacate(room, bed) {
